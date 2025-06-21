@@ -1,4 +1,5 @@
 import "./index.css";
+import { Footer } from "./ui/Footer";
 import { Icons } from "./ui/Icons";
 import { Navbar } from "./ui/Navbar";
 
@@ -30,6 +31,7 @@ function App() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

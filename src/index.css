@@ -24,7 +24,8 @@
   --alert-d: rgb(62, 100, 51);
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -97,8 +98,6 @@ html, body {
   z-index: 0;
 }
 
-
-
 .container-home h1 {
   margin: 0;
   font-size: 3.3rem;
@@ -150,7 +149,7 @@ html, body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(193, 154, 107, 0.75); /* tu --secondary con opacidad */
+  background-color: rgba(193, 154, 107); /* tu --secondary con opacidad */
   border-radius: 15px;
   z-index: -1;
 }
@@ -182,7 +181,7 @@ html, body {
 
 .icons-footer {
   position: relative;
-  top: 380px;
+  top: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,15 +223,18 @@ html, body {
 }
 
 .container-second {
+  display: flex;
   width: 100%;
-  height: 85vh; /* 100vh - altura del h1 */
-  background-image: url("./assets/secon-bg.jpg");
+  height: 90vh;
+  background-image: url(/src/assets/secon-bg.jpg);
   background-size: cover;
   background-position: center;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .container-second-right {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   width: 50%;
@@ -247,12 +249,24 @@ html, body {
 }
 
 .container-second-right p {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0 0 15px 0;
+  font-weight: 900;
 }
 
 .container-second-right span {
   font-size: 1.5rem;
   color: var(--quaternary);
-  font-weight: 500;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  padding: 5px;
+  text-align: center;
 }
