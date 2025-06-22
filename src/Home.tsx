@@ -3,7 +3,7 @@ import { Footer } from "./ui/Footer";
 import { Icons } from "./ui/Icons";
 import { Navbar } from "./ui/Navbar";
 
-function App() {
+function Home() {
   return (
     <div>
       <Navbar />
@@ -35,4 +35,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default Home;
