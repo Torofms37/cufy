@@ -270,3 +270,58 @@ body {
   padding: 5px;
   text-align: center;
 }
+
+/* loader */
+.coffee-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+.icon-l {
+  font-size: 4rem;
+  color: var(--primary);
+  animation: bounce 1s infinite alternate;
+  position: relative;
+  z-index: 1;
+}
+
+/* Vapor minimalista */
+.steam {
+  width: 10px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(to top, rgba(255,255,255,0.4), rgba(255,255,255,0));
+  animation: steam-rise 2s infinite ease-in-out;
+  margin-top: -25px;
+  z-index: 0;
+}
+
+/* Icon bounce animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Steam rise animation */
+@keyframes steam-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.8);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(-10px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-25px) scale(1.1);
+  }
+}
