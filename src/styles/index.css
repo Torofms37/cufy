@@ -34,53 +34,7 @@ body {
   overflow-x: hidden;
 }
 
-.navbar {
-  position: fixed;
-  display: flex;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 85px;
-  background-color: var(--primary);
-  padding: 5px 20px;
-  border-bottom: 1px solid var(--quaternary);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  align-content: center;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 70px;
-  height: 70px;
-  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
-}
-
-.logo:hover {
-  cursor: pointer;
-}
-
-.navbar-links {
-  background-color: var(--quaternary);
-  color: var(--primary);
-  height: 40px;
-  width: auto;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-}
-
-.navbar-links button {
-  all: unset;
-  padding: 10px;
-  width: auto;
-  height: 100%;
-  cursor: pointer;
-}
-
+/* landing page */
 .div {
   width: 1px;
   height: 100%;
@@ -112,7 +66,6 @@ body {
   font-weight: 500;
 }
 
-/* Mantén esto como ya lo tenías */
 .first-container::before {
   content: "";
   position: absolute;
@@ -120,14 +73,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/bg.jpg");
+  background-image: url("../assets/bg.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(0.35);
   z-index: -1;
 }
 
-/* Ajuste aquí: solo fondo con opacidad, sin imagen */
 .container-home {
   position: relative;
   margin: 0;
@@ -149,7 +101,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(193, 154, 107); /* tu --secondary con opacidad */
+  background-color: rgba(193, 154, 107); 
   border-radius: 15px;
   z-index: -1;
 }
@@ -177,30 +129,6 @@ body {
 
 .container-home button:hover {
   background-color: var(--terciary-t);
-}
-
-.icons-footer {
-  position: relative;
-  top: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: auto;
-}
-
-.icon-f {
-  font-size: 2rem;
-  padding: 5px;
-  cursor: pointer;
-  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
-}
-
-.icons-footer {
-  color: var(--terciary);
-  border-radius: 10px;
-  padding: 5px;
-  background-color: var(--quaternary);
 }
 
 .second-container {
@@ -259,69 +187,4 @@ body {
   color: var(--quaternary);
   font-weight: 300;
   font-style: italic;
-}
-
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--primary);
-  padding: 5px;
-  text-align: center;
-}
-
-/* loader */
-.coffee-loader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  gap: 10px;
-}
-
-.icon-l {
-  font-size: 4rem;
-  color: var(--primary);
-  animation: bounce 1s infinite alternate;
-  position: relative;
-  z-index: 1;
-}
-
-/* Vapor minimalista */
-.steam {
-  width: 10px;
-  height: 30px;
-  border-radius: 50%;
-  background: linear-gradient(to top, rgba(255,255,255,0.4), rgba(255,255,255,0));
-  animation: steam-rise 2s infinite ease-in-out;
-  margin-top: -25px;
-  z-index: 0;
-}
-
-/* Icon bounce animation */
-@keyframes bounce {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-8px);
-  }
-}
-
-/* Steam rise animation */
-@keyframes steam-rise {
-  0% {
-    opacity: 0;
-    transform: translateY(10px) scale(0.8);
-  }
-  50% {
-    opacity: 0.6;
-    transform: translateY(-10px) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-25px) scale(1.1);
-  }
 }

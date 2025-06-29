@@ -1,10 +1,9 @@
-import "./index.css";
-import { Footer } from "./ui/Footer";
-import { Icons } from "./ui/Icons";
-import { Navbar } from "./ui/Navbar";
+import { Footer } from "../ui/Footer";
+import { Icons } from "../ui/Icons";
+import { Navbar } from "../ui/Navbar";
+import "../styles/index.css";
 
-
-function Home() {
+function LandingPage() {
 return (
     <div>
       <Navbar />
@@ -36,4 +35,4 @@ return (
     </div>
   );
 }
-export default Home;
+export default LandingPage;
