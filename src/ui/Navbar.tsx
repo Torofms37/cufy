@@ -7,12 +7,12 @@ export const Navbar = () => {
     <div className="navbar">
       <img src={logo} alt="logo del sitio" className='logo'/>
       <div className='navbar-links'>
-        <Link to="/loginpage">
-          <button>Iniciar sesión</button>
+        <Link to="/loginpage" className='nav-link'>
+          <button className='btn-nav'>Iniciar sesión</button>
         </Link>
         <div className='div'></div>
-        <Link to="/registerpage">
-          <button>Registrarse</button>
+        <Link to="/registerpage" className='nav-link'>
+          <button className='btn-nav'>Registrarse</button>
         </Link>
       </div>
     </div>

@@ -70,3 +70,12 @@
   height: 100%;
   cursor: pointer;
 }
+
+.nav-link {
+  text-decoration: none;  /* 🔥 Quita subrayado */
+  color: inherit;         /* 🔥 Hereda el color del padre */
+}
+
+.nav-link:visited {
+  color: inherit;
+}
