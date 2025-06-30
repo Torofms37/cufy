@@ -52,19 +52,6 @@ body {
   z-index: 0;
 }
 
-.container-home h1 {
-  margin: 0;
-  font-size: 3.3rem;
-  color: var(--terciary);
-  text-align: center;
-}
-
-.first-container h3 {
-  margin-top: 5px;
-  font-size: 1.5rem;
-  color: var(--quaternary);
-  font-weight: 500;
-}
 
 .first-container::before {
   content: "";
@@ -80,6 +67,8 @@ body {
   z-index: -1;
 }
 
+
+/*Contenedor principal del landing*/
 .container-home {
   position: relative;
   margin: 0;
@@ -90,7 +79,7 @@ body {
   text-align: start;
   background-color: transparent;
   height: auto;
-  padding: 20px;
+  padding: 20px clamp(2rem, 2vw, 20px);
   margin: 80px;
   border-radius: 15px;
   z-index: 1;
@@ -105,9 +94,36 @@ body {
   border-radius: 15px;
   z-index: -1;
 }
+/*Texto h1 de container-home*/
+.container-home h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  color: var(--terciary);
 
+}
+@media (200px <= width <= 600px) {
+  .container-home h1 {
+    text-align: center;
+  }
+}
+/*Texto h3 de container-home*/
+.first-container h3 {
+  margin-top: 5px;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: var(--quaternary);
+  font-weight: 500;
+
+}
+@media (200px <= width <= 600px) {
+  .container-home h3 {
+    text-align: center;
+  }
+}
+
+
+/*Icono de home dentro del container-home*/
 .icon-a {
-  font-size: 40px;
+  font-size: clamp(4rem, 6vw, 5rem);
 }
 
 .icon-a:hover {
