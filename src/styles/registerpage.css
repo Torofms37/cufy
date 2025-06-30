@@ -39,6 +39,12 @@ html {
   flex-direction: column;
 }
 
+.register-page h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5lh;
+}
+
 .ya-login {
   border: 1px solid var(--terciary);
   border-radius: 10px;

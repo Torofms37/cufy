@@ -1,12 +1,11 @@
 import '../../styles/registerpage.css'
 import Cafe from '../../assets/bringcafe.png'
-import { AuthLayout } from '../layout/AuthLayout'
 
 export const RegisterPage = () => {
   return (
     <div className="register-page">
 
-      <AuthLayout title="Crea una cuenta gratis" />
+      <h2>Crea una cuenta gratis</h2>
 
       <div className="fields-form">
         <h3>Llena los campos</h3>
