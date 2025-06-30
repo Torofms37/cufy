@@ -35,8 +35,8 @@ html {
   align-items: center;
   height: 100vh;
   color: var(--text);
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 .register-page h2 {
