@@ -1,10 +1,14 @@
 import "../../styles/loginpage.css";
 import Cafe from '../../assets/bringcafe.png'
+import { Logo } from "../../ui/Logo";
 
 
 export const LoginPage = () => {
   return (
     <div className="register-page">
+
+    <Logo />
+
       <h2>Inicia sesión</h2>
 
       <div className="fields-form">

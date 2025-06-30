@@ -192,10 +192,16 @@ body {
   text-align: right; /* para que el texto esté alineado */
 }
 
-.container-second-right p {
-  font-size: 3rem;
-  margin: 0 0 15px 0;
-  font-weight: 900;
+.text-second{
+  font-size: clamp(1.4rem, 5vw, 2.8rem);
+  color: var(--quaternary);
+  font-weight: 300;
+  margin-bottom: 20px; /* espacio entre párrafos */
+}
+
+.text-second strong {
+  color: var(--secondary);
+  font-weight: 700;
 }
 
 .container-second-right span {

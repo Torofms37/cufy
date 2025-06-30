@@ -1,9 +1,12 @@
 import '../../styles/registerpage.css'
 import Cafe from '../../assets/bringcafe.png'
+import { Logo } from '../../ui/Logo'
 
 export const RegisterPage = () => {
   return (
     <div className="register-page">
+
+      <Logo />
 
       <h2>Crea una cuenta gratis</h2>
 

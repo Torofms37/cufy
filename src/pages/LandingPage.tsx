@@ -22,9 +22,9 @@ return (
         <h1>Café para todos</h1>
         <div className="container-second">
           <div className="container-second-right">
-            <p>
-              Café de cualquier marca para empresas, gobierno y eventos en
-              México. Calidad, sabor y entrega eficiente para cada reunión y
+            <p className="text-second">
+              <strong>Café</strong> de cualquier marca para <strong>empresas</strong>, <strong>gobierno</strong> y <strong>eventos</strong> en
+              México. <strong>Calidad, sabor</strong> y <strong>entrega eficiente</strong> para cada reunión y
               jornada laboral.
             </p>
             <span>¡El café perfecto, cuando y donde lo necesites!</span>Add commentMore actions

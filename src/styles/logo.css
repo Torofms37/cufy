@@ -1,0 +1,18 @@
+.back-icon {
+  position: fixed;
+  font-size: calc(1.6rem + 1.3vw);
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.back-icon:visited {
+  color: inherit;
+}
+
+.back-icon:hover {
+  color: var(--secondary);
+  cursor: pointer;
+  filter: drop-shadow(0 0 1px var(--secondary));
+}
