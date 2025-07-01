@@ -44,6 +44,16 @@
   height: auto;
 }
 
+@media (200px <= width <= 550px) {
+  .icons-footer {
+    position: relative;
+    right: 265px;
+    top: 305px;
+
+  }
+  
+}
+
 .icon-f {
   font-size: 2rem;
   padding: 5px;

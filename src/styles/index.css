@@ -146,7 +146,7 @@ body {
 .container-home button:hover {
   background-color: var(--terciary-t);
 }
-
+/*Contenedor secundario y texto h1*/
 .second-container {
   display: flex;
   flex-direction: column;
@@ -154,18 +154,22 @@ body {
   min-height: 100vh;
   margin-top: 0; /* ya viene después del first */
 }
-
+/*TExto h1 dentro del second-container*/
 .second-container h1 {
   background-color: var(--quaternary);
   color: var(--terciary);
   height: 15vh;
   margin: 0;
-  font-size: 3.3rem;
+  font-size:clamp(2.5rem, 6vw, 3.9rem);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+
+
+/*Ultimo contenedor, 
+***NOTA: CAMBIAR NOMBRE, se confunde con el second-container*/
 .container-second {
   display: flex;
   width: 100%;
@@ -192,8 +196,15 @@ body {
   text-align: right; /* para que el texto esté alineado */
 }
 
+@media (200px <= width <= 500px){
+  .container-second-right{
+    text-align: center; /* centra el texto en pantallas pequeñas */
+    padding-right: 10%;
+  };
+}
+
 .text-second{
-  font-size: clamp(1.4rem, 5vw, 2.8rem);
+  font-size: clamp(1.2rem, 4.5vw, 2.8rem);
   color: var(--quaternary);
   font-weight: 300;
   margin-bottom: 20px; /* espacio entre párrafos */
