@@ -1,0 +1,63 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Colors */
+  --primary: rgb(111, 78, 55);
+  --secondary: rgb(193, 154, 107);
+  --terciary: rgb(59, 47, 47);
+  --terciary-t: rgb(59, 47, 47, 0.6);
+  --quaternary: rgb(234, 224, 213);
+  --warning: rgb(164, 4, 4);
+  --warning-d: rgb(146, 4, 4);
+  --alert: rgb(74, 119, 60);
+  --alert-d: rgb(62, 100, 51);
+}
+
+
+/*Estilos de la pagina de terminos y condiciones*/
+/*Contenedor principal de tyc*/
+.containerPrincipalTyc {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr;
+}
+
+
+/*Título de tyc*/
+.tituloTyc {
+  text-align: center;
+  position: relative;
+  top:clamp(6rem, 2vw, 2rem);
+  color: var(--terciary);
+  font-size: clamp(1.3rem, 1.5vw, 2.5rem);
+}
+
+/*Estilos para etiquetas strong, p y fecha de tyc*/
+.contenidoTyc p {
+    padding: 0 3% 0 3%;
+    color: black;
+    font-size: clamp(1.2rem, 1.4vw, 1.9rem);
+    font-family: serif;/*CHECAR FUENTE*/
+}
+
+.contenidoTyc strong {
+    font-size: clamp(1.3rem, 1.8vw, 2.5rem);
+    color: var(--primary);
+
+}
+
+#fechaTyc {
+    color: red;
+    font-size: clamp(1.2rem, 1.5vw, 1.2rem);
+}

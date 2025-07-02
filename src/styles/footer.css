@@ -67,3 +67,14 @@
   padding: 5px;
   background-color: var(--quaternary);
 }
+
+/*Texto de terminos y condiciones, dentro del footer*/
+
+.tyc{
+  color:rgb(255, 255, 255);
+  display: flex;
+  padding-left: 2%;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+}
