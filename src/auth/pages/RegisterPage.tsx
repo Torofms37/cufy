@@ -1,6 +1,7 @@
 import '../../styles/registerpage.css'
 import Cafe from '../../assets/bringcafe.png'
 import { Logo } from '../../ui/Logo'
+import { Terms } from '../../ui/components/terms'
 
 export const RegisterPage = () => {
   return (
@@ -46,6 +47,7 @@ export const RegisterPage = () => {
         <h3>¿Ya tienes cuenta?</h3>
         <button className="btn-submit">Inicia sesión</button>
       </div>
+      <Terms />
     </div>
   )
 }

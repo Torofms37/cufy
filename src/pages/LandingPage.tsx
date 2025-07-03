@@ -27,7 +27,7 @@ return (
               México. <strong>Calidad, sabor</strong> y <strong>entrega eficiente</strong> para cada reunión y
               jornada laboral.
             </p>
-            <span>¡El café perfecto, cuando y donde lo necesites!</span>Add commentMore actions
+            <span>¡El café perfecto, cuando y donde lo necesites!</span>
           </div>
         </div>
       </section>

@@ -24,7 +24,6 @@
   --alert-d: rgb(62, 100, 51);
 }
 
-
 /*Estilos de la pagina de terminos y condiciones*/
 /*Contenedor principal de tyc*/
 .containerPrincipalTyc {
@@ -33,12 +32,11 @@
   grid-template-columns: 1fr;
 }
 
-
 /*Título de tyc*/
 .tituloTyc {
   text-align: center;
   position: relative;
-  top:clamp(6rem, 2vw, 2rem);
+  top: clamp(6rem, 2vw, 2rem);
   color: var(--terciary);
   font-size: clamp(1.3rem, 1.5vw, 2.5rem);
 }
@@ -49,16 +47,16 @@
 }
 
 .contenidoTyc p {
-    margin: 0 0 20px 0;
-    padding: 0 3% 0 3%;
-    color: black;
-    font-size: clamp(1.2rem, 1.4vw, 1.9rem);
+  margin: 0 0 20px 0;
+  padding: 0 3% 0 3%;
+  color: black;
+  font-size: clamp(1.2rem, 1.4vw, 1.9rem);
 }
 
 .general-info {
-    border: 3px double var(--terciary-t);
-    margin: 30px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+  border: 3px double var(--terciary-t);
+  margin: 30px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* .general-info  {
@@ -66,15 +64,14 @@
 } */
 
 .contenidoTyc strong {
-    font-size: clamp(1.3rem, 1.8vw, 2.5rem);
-    color: var(--primary);
-
+  font-size: clamp(1.3rem, 1.8vw, 2.5rem);
+  color: var(--primary);
 }
 
 #fechaTyc {
   text-align: center;
-    color: var(--warning);
-    font-size: clamp(0.8rem, 1.2vw, 1rem);
+  color: var(--warning);
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
 }
 
 .link {
@@ -86,4 +83,26 @@
 .link:hover {
   text-decoration: underline;
   color: var(--primary);
+}
+
+.general-terms {
+  position: fixed;
+  bottom: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  font-weight: 400;
+}
+
+.terms {
+  color: var(--text);
+  font-style: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.terms:hover {
+  color: var(--primary);
+  text-decoration: underline;
 }

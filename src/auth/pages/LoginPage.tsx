@@ -1,6 +1,7 @@
 import "../../styles/loginpage.css";
 import Cafe from '../../assets/bringcafe.png'
 import { Logo } from "../../ui/Logo";
+import { Terms } from "../../ui/components/terms";
 
 
 export const LoginPage = () => {
@@ -35,6 +36,7 @@ export const LoginPage = () => {
         <h3>¿Todavía no tienes cuenta?</h3>
         <button className="btn-submit">Registrate</button>
       </div>
+      <Terms />
     </div>
   );
 };
